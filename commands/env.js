@@ -8,7 +8,7 @@ const EnvCommand = {
     title: "env",
     sourceFile: ".env.example",
     targetFile: ".env",
-    run: function (commandOptions) {
+    run: function () {
         console.log('Start:');
 
         if (fs.existsSync(EnvCommand.targetFile)) {
@@ -24,7 +24,6 @@ const EnvCommand = {
             return;
         }
 
-        const searchDelimiterMarkPattern = new RegExp(ENV_DELIMITER_MARK, 'g');
         const envFileContent = fs
             .readFileSync(EnvCommand.sourceFile, 'utf-8')
             .replace(/ /gm, '')
