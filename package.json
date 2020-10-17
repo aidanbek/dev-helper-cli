@@ -1,0 +1,19 @@
+{
+  "name": "dh-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Kalymbekov Aidanbek",
+  "license": "ISC",
+  "bin": {
+    "dev-helper-cli": "./bin/index.js"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "yargs": "^16.1.0"
+  }
+}

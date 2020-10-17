@@ -1,0 +1,6 @@
+{
+  "DEBUG": "TRUE",
+  "HOST": "test.com",
+  "DB": "my_db",
+  "DB_USER": "ld_user"
+}
